@@ -14,8 +14,12 @@
             background-color: rgb(26, 26, 148);
             color: white;
             text-align: center;
-            margin-top: -8px;
+            margin-top: -3px;
             padding: 20px;
+            margin-left: -2px;
+            margin-right: -2px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
         }
        .login-container{
           margin-top: 100px;
@@ -23,21 +27,42 @@
        }
        .form-group{
         padding: 10px;
-        text-align: left;
+        display: flex;
+        align-items: center;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background: white;
         margin-top: -10px;
+       }
+       .form-group i{
+        background-color: #003366;
+        color: #ccc;
+        padding: 10px;
+        border-radius:5px 0 0 5px;
+        font-size: 18px;
+       }
+       .form-group input{
+        width: 100%;
+        font-size: 16px;
+        padding: 10px;
+        border-radius: 0 5px 5px 0;
        }
        button{
         background-color: rgb(26, 26, 148);
         color: white;
-            text-align: center;
+         text-align: center;
          padding: 10px;
          width: 300px;
+         border-radius: 10px;
        }
        .link {
         padding: 10px;
        }
        .link a{
         color: blueviolet;
+       }
+       table{
+        border-radius: 10px;
        }
     </style>
 </head>
@@ -51,12 +76,12 @@
         <th>
             <form id="loginform">
             <div class="form-group">
-                <label for="email" style="background-color: rgb(26, 26, 148); color: aliceblue;">&#9993</label>
-                <input type="email" id="email name" placeholder="Email">
+                <div class="icon"><i>⍌</i></div>
+                <input type="email" placeholder="Email" required>
             </div>
             <div class="form-group"> 
-                <label for="password" style="background-color: rgb(26, 26, 148);">&#x1F512</label>
-                <input type="Password" id="Password" placeholder="Password">
+                <div class="icon"><i>🔒</i></div>
+                <input type="Password" placeholder="Password" required>
             </div>
             <div class="link" style="text-align: left;">
                 <a href="forgot password">Forgot Password?</a>
